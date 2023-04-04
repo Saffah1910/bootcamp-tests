@@ -6,7 +6,7 @@ describe('Registartion numbers from Paarl' , function(){
         assert.equal((0), countAllPaarl("CK 345"));
     });
 
-    it('Return no registration number entered if empty string was passed' , function(){
+    it('Return no registration number entered if an empty string was passed' , function(){
         assert.equal(("no registration number entered"), countAllPaarl(""));
     });
 

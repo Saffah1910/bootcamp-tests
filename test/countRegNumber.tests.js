@@ -1,5 +1,5 @@
 describe('Count number of registartion numbers' , function(){
-    it('if it is a registration number then return the amount' , function(){
+    it('return how many registaration numbers are in the string' , function(){
         assert.equal((3), countRegNumber("CA 182736,CY 523519,CJ 812328"));
     });
 

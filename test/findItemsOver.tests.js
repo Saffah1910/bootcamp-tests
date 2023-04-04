@@ -29,7 +29,7 @@ describe('products that have a quantity higher than the threshold', function () 
 
         assert.deepEqual(results, findItemsOver(itemList, 100));
     });
-    it('It should return the message no items over the threshold', function () {
+    it('It should return the message no items over the threshold if there are no items with quanity higher than 10', function () {
 
         var itemList = [
             { name: 'kiwi', qty: 2 },
