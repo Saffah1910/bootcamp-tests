@@ -1,17 +1,53 @@
-// describe('products that have a quantity higher than 20', function () {
-//     it('if the product quantity is less than 20 do not return the name of the item', function () {
-//         assert.deepEqual(([]), findItemsOver20(10));
-//     });
-//     it('if the product quantity is more than 20 return the name of the item', function () {
-//         assert.deepEqual(([]), findItemsOver20(37));
-//     });
-    
+describe('products that have a quantity higher than the threshold', function () {
+    it('2 items should be returned if the quanity it is higher than 25', function () {
+
+        var itemList = [
+            { name: 'kiwi', qty: 20 },
+            { name: 'grapes', qty: 52 },
+            { name: 'orange', qty: 17 },
+            { name: 'plum', qty: 26 },
+        ];
+        var results = [
+            { name: 'grapes', qty: 52 },
+            { name: 'plum', qty: 26 },
+        ];
+
+        assert.deepEqual(results, findItemsOver(itemList, 25));
+    });
+    it('1 items should be returned if the quanity it is higher than 100', function () {
+
+        var itemList = [
+            { name: 'kiwi', qty: 20 },
+            { name: 'grapes', qty: 52 },
+            { name: 'orange', qty: 17 },
+            { name: 'plum', qty: 200 },
+        ];
+        var results = [
+
+            { name: 'plum', qty: 200 },
+        ];
+
+        assert.deepEqual(results, findItemsOver(itemList, 100));
+    });
+    it('It should return the message no items over the threshold', function () {
+
+        var itemList = [
+            { name: 'kiwi', qty: 2 },
+            { name: 'grapes', qty: 5 },
+            { name: 'orange', qty: 7 },
+            { name: 'plum', qty: 2 },
+        ];
+        var results = [
+            "no items over the threshold"
+        ];
+        assert.deepEqual("no items over the threshold", findItemsOver(itemList, 10));
+    });
 
 
 
-//     it('If the item quanity is an empty string return no data entered', function () {
-//         assert.deepEqual(([]), findItemsOver20(" "), 'no data entered');
-//     });
 
 
-// });
+
+
+
+});
