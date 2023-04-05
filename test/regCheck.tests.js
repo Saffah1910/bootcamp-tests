@@ -1,4 +1,4 @@
-describe('Check if a registration number is for GP, L, EC, MP registration plates.' , function(){
+describe('3.Check if a registration number is for GP, L, EC, MP registration plates.' , function(){
     it('return true if the registration numbers is from GP ' , function(){
         assert.equal(true, regCheck("DC 55 YU GP", "GP"));
     });

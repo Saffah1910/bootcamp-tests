@@ -1,4 +1,4 @@
-describe('products that have a quantity higher than 20', function () {
+describe('12.products that have a quantity higher than 20', function () {
     it('only return 2 product names if quantity of the item is higher than 20 ', function () {
         var itemList = [
             {name : 'apples', qty : 5},

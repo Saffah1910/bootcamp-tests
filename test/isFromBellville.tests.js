@@ -1,4 +1,4 @@
-describe('Vehicle registration numbers', function () {
+describe('2.Vehicle registration numbers', function () {
     it('return true for registration numbers from Bellville ', function () {
         assert.equal(true, isFromBellville("CY 123"));
     });

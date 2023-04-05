@@ -1,4 +1,4 @@
-describe('registration numbers in the string that is for that town', function () {
+describe('8.registration numbers in the string that is for that town', function () {
     it('return the amount of registration numbers from stellenbosch', function () {
 
 

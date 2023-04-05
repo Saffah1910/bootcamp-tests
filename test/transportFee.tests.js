@@ -1,4 +1,4 @@
-describe('returns the right price based on the shift', function () {
+describe('9.returns the right price based on the shift', function () {
     it('return fees for transport R20 the shift is in the morning', function () {
 
 
@@ -10,8 +10,8 @@ describe('returns the right price based on the shift', function () {
         
     });
 
-    it('Return no registration number entered if empty string was passed', function () {
-        assert.equal(("no registration number entered"), countAllFromTown(""));
+    it('Return free if working a night shift', function () {
+        assert.equal(("free"), transportFee('night'));
         
 
 

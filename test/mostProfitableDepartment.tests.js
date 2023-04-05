@@ -1,4 +1,4 @@
-describe('Which department is the most profitable', function () {
+describe('14.Which department is the most profitable', function () {
     it('return the name of the deparartment from saleData which had the highest sales', function () {
         var salesData = [
             {department : 'hardware', sales : 4500, day : 'Monday'},

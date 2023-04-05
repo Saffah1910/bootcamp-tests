@@ -1,4 +1,4 @@
-describe('products that have a quantity higher than the threshold', function () {
+describe('13.products that have a quantity higher than the threshold', function () {
     it('2 items should be returned if the quanity it is higher than 25', function () {
 
         var itemList = [
